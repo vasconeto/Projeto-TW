@@ -9,7 +9,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #4CAF50;
+    background-color: #a84868;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -54,7 +54,7 @@ main section {
 }
 
 main h2 {
-    color: #4CAF50;
+    color: #000000;
 }
 
 /* Footer styles */
@@ -66,4 +66,24 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Menu icon styles */
+.menu-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.menu-icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.menu-icon a:hover {
+    background-color: #575757;
 }

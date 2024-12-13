@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const books = [
         { title: 'The Way of Kings', author: 'Brandon Sanderson', cover: 'imgs/TheWayOfKings.png' },
-        // Add more book objects here
+        { title: 'Words of Radiance', author: 'Brandon Sanderson', cover: 'imgs/WordsOfRadiance.png' },
+        { title: 'Oathbringer', author: 'Brandon Sanderson', cover: 'imgs/Oathbringer.png' },
+        
     ];
 
     function displayBooks(books) {

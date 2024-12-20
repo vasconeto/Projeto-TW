@@ -13,6 +13,7 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
@@ -46,11 +47,11 @@ nav ul li a:hover {
 
 /* Main content styles */
 main {
-    padding: 2rem;
+    padding: 4rem;
 }
 
 main section {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 main h2 {
@@ -82,10 +83,36 @@ footer {
     background-color: #333;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    display: inline-block;
 }
 
 .menu-icon a:hover {
     background-color: #575757;
+}
+
+/* Dropdown menu styles */
+.menu-icon .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-icon .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-icon .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.menu-icon:hover .dropdown-content {
+    display: block;
 }
 
 /* Seção de pesquisa */

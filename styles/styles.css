@@ -93,15 +93,16 @@ footer {
 /* Dropdown menu styles */
 .menu-icon .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed; /* Changed to fixed */
     background-color: #333;
-    width: 300px; /* Increased width */
+    width: 400px; /* Increased width */
     height: 100vh; /* Full height */
     top: 0;
-    left: -300px; /* Start off-screen */
+    left: 0; /* Stick to the left side of the screen */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    transition: left 0.3s ease; /* Animation for sliding in */
+    transition: transform 0.3s ease; /* Animation for sliding in */
+    transform: translateX(-100%); /* Start off-screen */
 }
 
 .menu-icon .dropdown-content a {
@@ -117,7 +118,7 @@ footer {
 
 .menu-icon:hover .dropdown-content {
     display: block;
-    left: 0; /* Slide in from the left */
+    transform: translateX(0); /* Slide in from the left */
 }
 
 /* Seção de pesquisa */

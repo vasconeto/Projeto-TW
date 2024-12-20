@@ -95,9 +95,13 @@ footer {
     display: none;
     position: absolute;
     background-color: #333;
-    min-width: 160px;
+    width: 300px; /* Increased width */
+    height: 100vh; /* Full height */
+    top: 0;
+    left: -300px; /* Start off-screen */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transition: left 0.3s ease; /* Animation for sliding in */
 }
 
 .menu-icon .dropdown-content a {
@@ -113,6 +117,7 @@ footer {
 
 .menu-icon:hover .dropdown-content {
     display: block;
+    left: 0; /* Slide in from the left */
 }
 
 /* Seção de pesquisa */

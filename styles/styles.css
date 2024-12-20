@@ -68,6 +68,7 @@ header h1 {
     transform: translateX(-100%); /* Start off-screen */
     background-image: url('/images/background.jpg'); /* Background image */
     background-size: cover; /* Ensure the background image covers the entire menu */
+    background-position: center; /* Center the background image */
 }
 
 .menu-icon .dropdown-content a {

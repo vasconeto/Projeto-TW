@@ -110,3 +110,73 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Slideshow styles */
+.slideshow {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+    position: relative;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slides img.active {
+    opacity: 1;
+}
+
+/* Search bar styles */
+.search-bar {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #575757;
+}
+
+/* New uploads styles */
+.new-uploads {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.new-uploads h2 {
+    margin-bottom: 1rem;
+}
+
+.new-uploads ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.new-uploads li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}

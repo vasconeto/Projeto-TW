@@ -50,7 +50,7 @@ header h1 {
     left: 0; /* Stick to the left side of the screen */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: transform 0.3s ease; /* Animation for sliding in */
+    transition: transform 1s ease; /* Further extended animation time */
     transform: translateX(-100%); /* Start off-screen */
     background: rgba(51, 51, 51, 0.9); /* Slightly translucent background */
 }

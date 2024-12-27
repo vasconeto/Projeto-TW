@@ -38,7 +38,7 @@ header h1 {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    display: inline-block;
+    display: block;
     margin: 0;
     padding: 0;
 }
@@ -50,7 +50,7 @@ header h1 {
 /* Dropdown menu styles */
 .menu-icon .dropdown-content {
     position: fixed;
-    width: 25vw; /* Slightly bigger menu */
+    width: 25vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@ header h1 {
 .menu-icon .dropdown-content a {
     color: white;
     text-align: center;
-    font-size: 1.5rem; /* Adjusted font size for visibility */
+    font-size: 1.5rem;
     padding: 1rem 0;
     text-decoration: none;
     display: block;
@@ -120,17 +120,15 @@ footer {
 
 /* Slideshow styles */
 .slideshow {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 700px; /* Altura ajustada */
     overflow: hidden;
     position: relative;
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
 }
 
 .slides img {
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
     object-fit: cover;
     position: absolute;
     top: 0;

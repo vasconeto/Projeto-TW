@@ -118,26 +118,6 @@ textarea{
     position: relative;
 }
 
-.circle{
-    border-radius: 50%;
-    background: linear-gradient(123deg, transparent 20%, #ff7e33dc);
-    position: absolute;
-}
-
-.circle.one{
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-}
-
-.circle.two{
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
-}
-
 .contact-form:before{
     content: "";
     position: absolute;
@@ -338,49 +318,6 @@ textarea.input{
     transform: scale(1.05);
 }
 
-.contact-info:before{
-    content: "";
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    border: 22px solid #EC5800;
-    border-radius: 50%;
-    bottom: -77px;
-    right: 50px;
-    opacity: 0.3;
-}
-
-.big-circle{
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #EC5800, #ff7e33dc);
-    bottom: 50%;
-    right: 50%;
-    transform: translate(-40%, 38%);
-}
-
-.big-circle:after{
-    content: "";
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    background-color: #fafafa;
-    border-radius: 50%;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
-}
-
-.square{
-    position: absolute;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(181%, 11%);
-    opacity: 0.2;
-}
-
 @media (max-width: 600px){
     .form{
         grid-template-columns: 1fr;
@@ -399,17 +336,6 @@ textarea.input{
         right: 70px;
     }
 
-    .square{
-        transform: translate(140%, 43%);
-        height: 350px;
-    }
-
-    .big-circle{
-        bottom: 75%;
-        transform: scale(0.9) translate(-40%, 30%);
-        right: 50%;
-    }
-
     .text{
         margin: 1rem 0 1.5rem 0;
     }
@@ -425,11 +351,6 @@ textarea.input{
     }
 
     .contact-info:before{
-        display: none;
-    }
-
-    .square,
-    .big-circle{
         display: none;
     }
 
